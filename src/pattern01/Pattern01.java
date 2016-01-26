@@ -31,22 +31,32 @@ public class Pattern01 {
         try {
 
             AccountI silver = AccountFactory.createAccount("Silver");
-            System.out.println(silver.rewardPoints(123.00));
+            System.out.println(silver.addRewardPoints(123.00));
 
             AccountI thegolden = AccountFactory.createAccount("GOLD");
-            System.out.println(thegolden.rewardPoints(123.00));
+            System.out.println(thegolden.addRewardPoints(123.00));
 
             AccountI anotherPlatinum = AccountFactory.createAccount("pLATINUM");
-            System.out.println(anotherPlatinum.rewardPoints(123.00));
+            System.out.println(anotherPlatinum.addRewardPoints(123.00));
 
             // makes the program crash if the exception is not handled
-            AccountI bogusAccount = AccountFactory.createAccount("I throw an exception");
+            //AccountI bogusAccount = AccountFactory.createAccount("I throw an exception");
+            System.out.println("------- add some reward points --------");
+
+            silver.addRewardPoints(234.56);
+            thegolden.addRewardPoints(234.56);
+            anotherPlatinum.addRewardPoints(234.56);
+
+            System.out.println("silver (rewardPoints): " + silver.getRewardPoints());
+            System.out.println("thegolden (rewardPoints): " + thegolden.getRewardPoints());
+            System.out.println("anotherPlatinum (rewardPoints):" + anotherPlatinum.getRewardPoints());
 
         } catch (IllegalArgumentException e) {
             System.err.println("IndexOutOfBoundsException: " + e.getMessage());
         }
-        
-        System.out.println("------- end of program --------") ;
+
+        System.out.println("------- end of program --------");
+
     }
 
     public static void oneClass() {
