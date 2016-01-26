@@ -2,9 +2,9 @@
 
 package zwiemandl.src.factory;
 
-public class GoldAccount implements AccountI {
+public class GoldAccount extends AccountBase implements AccountI {
     
-    private int rewardPoints ;
+    //private int rewardPoints ;
         
     @Override
     public int rewardPoints (double amount) {

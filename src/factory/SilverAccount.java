@@ -2,9 +2,9 @@
 
 package zwiemandl.src.factory;
 
-public class SilverAccount implements AccountI {
+public class SilverAccount extends AccountBase {
     
-    private int rewardPoints ;
+    //private int rewardPoints ;
     
     @Override
     public int rewardPoints (double amount) {
