@@ -3,9 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package accounts;
-
-import accounts.BaseAccount;
+package zwiemandl.src.accounts;
 
 /**
  *
