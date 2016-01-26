@@ -6,6 +6,8 @@ package zwiemandl.src.pattern01;
 import zwiemandl.src.accounts.SilverAccount;
 import zwiemandl.src.accounts.PlatinumAccount;
 import zwiemandl.src.accounts.GoldAccount;
+
+// we only need to import the interface and AccountFactory
 import zwiemandl.src.factory.AccountFactory;
 import zwiemandl.src.factory.AccountI;
 
