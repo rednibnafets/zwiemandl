@@ -3,6 +3,10 @@
  */
 package pattern01;
 
+import accounts.SilverAccount;
+import accounts.PlatinumAccount;
+import accounts.GoldAccount;
+
 /**
  *
  * @author stefan
@@ -37,7 +41,9 @@ public class Pattern01 {
         
         PlatinumAccount ac003 = new PlatinumAccount() ;
         ac003.rewardPoints(123.00) ;
-        System.out.println(ac003.getRewardPoints()) ;             
+        System.out.println(ac003.getRewardPoints()) ;    
+        
+        
         
     
     }

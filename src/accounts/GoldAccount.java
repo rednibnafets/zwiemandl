@@ -3,26 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pattern01;
+package accounts;
+
+import accounts.BaseAccount;
 
 /**
  *
  * @author stefan
  */
-public class SilverAccount extends BaseAccount{
+public class GoldAccount extends BaseAccount {
+
+    private final int goldTAValue = 8 ;
     
-    private final int silverTACost = 15 ;
-    
-    public SilverAccount ()
+    public GoldAccount ()
     {
         super() ;   // call the base class's ctor
     }
     
     public int rewardPoints(double amount){
                   
-        rewardPoints = (int)Math.round(amount/silverTACost) ;  
+        rewardPoints = (int)Math.round(amount/goldTAValue) ;  
         return rewardPoints ;
         
-    }
-   
+    }   
+    
 }
