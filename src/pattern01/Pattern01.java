@@ -6,6 +6,8 @@ package zwiemandl.src.pattern01;
 import zwiemandl.src.accounts.SilverAccount;
 import zwiemandl.src.accounts.PlatinumAccount;
 import zwiemandl.src.accounts.GoldAccount;
+import zwiemandl.src.factory.AccountFactory;
+import zwiemandl.src.factory.AccountI;
 
 /**
  * Design Patterns: Factory 
@@ -14,6 +16,30 @@ import zwiemandl.src.accounts.GoldAccount;
 public class Pattern01 {
 
     public static void main(String[] args) {
+        
+        // one class, client uses new
+        oneClass() ;
+        System.out.println("--------------------------------------");
+        // use superclass and subclasses, client uses new
+        superAndSubClasses();
+        System.out.println("--------------------------------------");
+        // use the Factory pattern -> do not allow the client to use new
+        
+        AccountI silver = AccountFactory.createAccount("Silver") ;
+        System.out.println( silver.rewardPoints(123.00) );
+
+        AccountI thegolden = AccountFactory.createAccount("GOLD") ;
+        System.out.println( thegolden.rewardPoints(123.00) );    
+        
+        AccountI anotherPlatinum = AccountFactory.createAccount("pLATINUM") ;
+        System.out.println( anotherPlatinum.rewardPoints(123.00) );    
+        
+        AccountI bogusAccount = AccountFactory.createAccount("I throw an exception") ;        
+        
+    }
+    
+    public static void oneClass()
+    {
         Account ac01 = new Account("silver") ;
         ac01.rewardPoints(123.00) ;
         System.out.println(ac01.getRewardPoints()) ;
@@ -25,8 +51,10 @@ public class Pattern01 {
         Account ac03 = new Account("platinum") ;
         ac03.rewardPoints(123.00) ;
         System.out.println(ac03.getRewardPoints()) ; 
-        
-        System.out.println("--------------------------------------");
+    }
+    
+    public static void superAndSubClasses()
+    {
         
         SilverAccount ac001 = new SilverAccount() ;
         ac001.rewardPoints(123.00) ;
@@ -41,8 +69,7 @@ public class Pattern01 {
         System.out.println(ac003.getRewardPoints()) ;    
         
         // if this is possible, use protected
-        //System.out.println(ac003.balance) ;            
-        
+        //System.out.println(ac003.balance) ;   
     
     }
     
