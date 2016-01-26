@@ -11,5 +11,11 @@ public class SilverAccount extends AccountBase {
         rewardPoints += (int) Math.round(amount / silverTAValue);
         return rewardPoints;
     }
+    
+// same method used in all subclasses -> see class AccountBase
+//    @Override
+//    public int getRewardPoints() {
+//        return rewardPoints;
+//    }    
 
 }

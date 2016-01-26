@@ -9,6 +9,7 @@ package zwiemandl.src.factory;
  *
  * @author stefan
  */
+// does not implement the entire interface ...
 public abstract class AccountBase implements AccountI {
 
     protected double balance;
@@ -19,7 +20,13 @@ public abstract class AccountBase implements AccountI {
         this.rewardPoints = 0;
     }
 
+    @Override
+    public abstract int addRewardPoints(double amount) ;
+    //public abstract int getRewardPoints() ;
+
+    @Override
     public int getRewardPoints() {
         return rewardPoints;
-    }
+    }        
+    
 }
