@@ -23,8 +23,23 @@ public class Pattern01 {
         
         Account ac03 = new Account("platinum") ;
         ac03.rewardPoints(123.00) ;
-        System.out.println(ac03.getRewardPoints()) ;        
+        System.out.println(ac03.getRewardPoints()) ; 
         
+        System.out.println("--------------------------------------");
+        
+        SilverAccount ac001 = new SilverAccount() ;
+        ac001.rewardPoints(123.00) ;
+        System.out.println(ac001.getRewardPoints()) ;     
+        
+        GoldAccount ac002 = new GoldAccount() ;
+        ac002.rewardPoints(123.00) ;
+        System.out.println(ac002.getRewardPoints()) ;     
+        
+        PlatinumAccount ac003 = new PlatinumAccount() ;
+        ac003.rewardPoints(123.00) ;
+        System.out.println(ac003.getRewardPoints()) ;             
+        
+    
     }
     
 }

@@ -16,15 +16,11 @@ public class Account {
     private int rewardPoints ;
     
     // transaction value per point
-    private final int silverTACost = 15 ;
-    private final int goldTACost = 8 ;
-    private final int platinumTACost = 4 ;
+    private final int silverTAValue = 15 ;
+    private final int goldTAValue = 8 ;
+    private final int platinumTAValue = 4 ;
     
-    // balance costs
-    private final int goldBCost = 1500 ;
-    private final int platinumBCost = 750 ;
-    
-    
+   
     
     public Account(String actype){
         this.actype = actype ;
@@ -39,13 +35,13 @@ public class Account {
         switch(actype)
         {
             case "silver":                
-                rewardPoints = (int)Math.round(amount/silverTACost) ;
+                rewardPoints = (int)Math.round(amount/silverTAValue) ;
                 break;
             case "gold":                
-                rewardPoints = (int)Math.round(amount/goldTACost) ;
+                rewardPoints = (int)Math.round(amount/goldTAValue) ;
                 break;
             case "platinum":                
-                rewardPoints = (int)Math.round(amount/platinumTACost) ;
+                rewardPoints = (int)Math.round(amount/platinumTAValue) ;
                 break;                
             default:
                 break;
