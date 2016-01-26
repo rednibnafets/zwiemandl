@@ -34,7 +34,7 @@ public class Pattern01 {
         AccountI anotherPlatinum = AccountFactory.createAccount("pLATINUM") ;
         System.out.println( anotherPlatinum.rewardPoints(123.00) );    
         
-        AccountI bogusAccount = AccountFactory.createAccount("I throw an exception") ;        
+        //AccountI bogusAccount = AccountFactory.createAccount("I throw an exception") ;        
         
     }
     
