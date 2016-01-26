@@ -13,7 +13,6 @@ import zwiemandl.src.accounts.GoldAccount;
  */
 public class Pattern01 {
 
-
     public static void main(String[] args) {
         Account ac01 = new Account("silver") ;
         ac01.rewardPoints(123.00) ;
