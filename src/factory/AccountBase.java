@@ -18,4 +18,8 @@ public abstract class AccountBase implements AccountI {
         this.balance = 0.0;
         this.rewardPoints = 0;
     }
+
+    public int getRewardPoints() {
+        return rewardPoints;
+    }
 }

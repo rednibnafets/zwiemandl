@@ -1,15 +1,15 @@
-
-
 package zwiemandl.src.factory;
 
 public class SilverAccount extends AccountBase {
-    
-    //private int rewardPoints ;
-    
+// implied ...    
+//    public SilverAccount() {
+//        super();
+//    }
+
     @Override
-    public int rewardPoints (double amount) {
-        rewardPoints = (int)Math.round(amount/silverTAValue) ;  
-        return rewardPoints ;
-    }       
-   
+    public int addRewardPoints(double amount) {
+        rewardPoints += (int) Math.round(amount / silverTAValue);
+        return rewardPoints;
+    }
+
 }

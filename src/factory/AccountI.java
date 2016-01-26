@@ -8,7 +8,8 @@ public interface AccountI {
     int goldTAValue = 8 ;
     int silverTAValue = 15 ;
      
-    abstract int rewardPoints (double amount) ;  
+    abstract int addRewardPoints (double amount) ;  
+    int getRewardPoints() ;
     // is abstract by default -> keyword abstract not needed. 
 }
 //
