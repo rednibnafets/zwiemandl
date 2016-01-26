@@ -13,8 +13,8 @@ package accounts;
  */
 public class BaseAccount {
     
-    public double balance ;
-    public int rewardPoints ;
+    protected double balance ;
+    protected int rewardPoints ;
     
     public BaseAccount(){
         this.balance = 0.0 ;
@@ -23,3 +23,13 @@ public class BaseAccount {
     
     public int getRewardPoints() { return rewardPoints; }
 }
+
+/*
+* A subclass inherits all of the public and protected members of its parent, 
+* no matter what package the subclass is in. If the subclass is in the same 
+* package as its parent, it also inherits the package-private members of 
+* the parent. 
+*/
+
+// use protected
+// http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html

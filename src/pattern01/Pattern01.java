@@ -8,7 +8,7 @@ import accounts.PlatinumAccount;
 import accounts.GoldAccount;
 
 /**
- *
+ * Design Patterns: Factory 
  * @author stefan
  */
 public class Pattern01 {
@@ -43,7 +43,8 @@ public class Pattern01 {
         ac003.rewardPoints(123.00) ;
         System.out.println(ac003.getRewardPoints()) ;    
         
-        
+        // if this is possible, use protected
+        //System.out.println(ac003.balance) ;            
         
     
     }
