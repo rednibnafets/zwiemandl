@@ -1,11 +1,11 @@
 /*
  * refactoring: Factory pattern
  */
-package pattern01;
+package zwiemandl.src.pattern01;
 
-import accounts.SilverAccount;
-import accounts.PlatinumAccount;
-import accounts.GoldAccount;
+import zwiemandl.src.accounts.SilverAccount;
+import zwiemandl.src.accounts.PlatinumAccount;
+import zwiemandl.src.accounts.GoldAccount;
 
 /**
  * Design Patterns: Factory 
@@ -13,9 +13,7 @@ import accounts.GoldAccount;
  */
 public class Pattern01 {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
         Account ac01 = new Account("silver") ;
         ac01.rewardPoints(123.00) ;
