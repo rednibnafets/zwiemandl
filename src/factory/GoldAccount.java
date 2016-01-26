@@ -4,7 +4,6 @@ package zwiemandl.src.factory;
 
 public class GoldAccount implements AccountI {
     
-    private final int goldTAValue = 8 ;
     private int rewardPoints ;
     
     @Override
